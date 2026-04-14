@@ -28,10 +28,10 @@
 
 
   <!-- CSS -->
-  <link rel="stylesheet" href="/public/css/poole.css">
-  <link rel="stylesheet" href="/public/css/syntax.css">
-  <link rel="stylesheet" href="/public/css/hyde.css">
-  <link rel="stylesheet" href="/public/css/app.css">
+  <link rel="stylesheet" href="./public/css/poole.css">
+  <link rel="stylesheet" href="./public/css/syntax.css">
+  <link rel="stylesheet" href="./public/css/hyde.css">
+  <link rel="stylesheet" href="./public/css/app.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
   <!-- Icons -->
@@ -78,196 +78,7 @@
       <div style="position: absolute;left: 0;right: 0;text-align: center;background: #fefcea;background: -moz-linear-gradient(top, #fefcea 0%, #f1da36 100%);background: -webkit-linear-gradient(top, #fefcea 0%,#f1da36 100%);background: linear-gradient(to bottom, #fefcea 0%,#f1da36 100%);filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefcea', endColorstr='#f1da36',GradientType=0 );z-index: 999;padding: 10px;">
           <strong>WARN!</strong> This version is absolute, please switch to <a href="https://js-dos.com">js-dos 6.22</a>
         </div>
-    <div class="sidebar">
-  <div class="container sidebar-sticky">
-    <div class="sidebar-about">
-      <h1>
-        <a href="">
-          js-dos
-        </a>
-      </h1>
-      <p class="lead">A javascript version of dosbox that can run dos programs and games in browser. Made by <a href="https://twitter.com/caiiiycuk" target="_blank">@caiiiycuk</a></p>
-    </div>
 
-    <nav class="sidebar-nav">
-      <a class="sidebar-nav-item" href="/">Home</a>
-      
-      <a class="sidebar-nav-item" href="/getting-started/">Getting started</a>
-      <a class="sidebar-nav-item" href="/2015/10/14/api-doc/">API Documentation</a>
-
-      
-
-      
-      
-        
-          
-            <a class="sidebar-nav-item" href="/games/">Games</a>
-          
-        
-      
-        
-          
-            <a class="sidebar-nav-item" href="/about/">About</a>
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-        
-          
-        
-      
-
-    </nav>
-
-    <p>&copy; 2018. All rights reserved.</p>
-    <div class="yashare-auto-init" data-yashareL10n="en" data-yashareType="small" data-yashareQuickServices="vkontakte,facebook,twitter,gplus" data-yashareTheme="counter"></div> 
-  </div>
-</div>
 
 
     <div class="content container">
@@ -306,7 +117,7 @@
   var dosbox_DOOM = new Dosbox({
     id: "DOOM",
     onload: function (dosbox) {
-      dosbox_DOOM.run("/cdn/upload/DOOM-@evilution.zip", "./DOOM/DOOM.EXE");
+      dosbox_DOOM.run("./upload/DOOM-@evilution.zip", "./DOOM/DOOM.EXE");
     },
     onrun: function (dosbox, app) {
       console.log("App '" + app + "' is runned");
